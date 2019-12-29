@@ -1,0 +1,18 @@
+{{define "title"}}
+    {{.Title}}
+{{end}}
+
+{{define "body"}}
+    <h1>{{.Title}}</h1>
+    <p>{{.Name}}</p>
+    <table class="{{.Value}}">
+        <tr>
+            <td>
+                {{.User}}
+            </td>
+            <td>
+                {{.Pass}}
+            </td>
+        </tr>
+    </table>
+{{end}}

@@ -1,0 +1,15 @@
+{{define "base"}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{template "title" .}}</title>
+    </head>
+
+    <body>
+        <div class="content">
+            {{template "body" .}}
+        </div>
+    </body>
+</html>
+{{end}}
