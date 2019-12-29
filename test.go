@@ -14,8 +14,8 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	funcMap := template.FuncMap{
 		"safehtml": func(text string) template.HTML { return template.HTML(text) },
 	}
-	templates := template.Must(template.New("").Funcs(funcMap).ParseFiles("templates/base.html",
-		"templates/view.html"))
+	templates := template.Must(template.New("").Funcs(funcMap).ParseFiles("base.html",
+		"view.html"))
 	dat := struct {
 		Title string
 		Name  string
